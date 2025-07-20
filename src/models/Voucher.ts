@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 const voucherSchema = new Schema({
-  employeeId: { type: Number, required: true },
+  employeeId: { type: String, required: true },
   date: { type: Date, required: true },
   used: { type: Boolean, default: false },
 });
