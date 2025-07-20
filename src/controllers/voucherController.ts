@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Voucher from '../models/Voucher';
+import Voucher from '../models/voucher';
 
 export const createVoucher = async (req: Request, res: Response) => {
   const { employeeId, date } = req.body;

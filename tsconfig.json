@@ -3,10 +3,10 @@
     "target": "ES2020",
     "module": "CommonJS",
     "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true
-  }
+  },
+  "include": ["src", "__tests__", "jest.config.ts", "jest.setup.ts"]
 }
