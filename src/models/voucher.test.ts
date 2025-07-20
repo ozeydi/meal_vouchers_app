@@ -5,6 +5,10 @@ beforeAll(async () => {
   await mongoose.connect(process.env.MONGO_URI as string);
 });
 
+afterEach(async () => {
+  await Voucher.deleteMany({});
+});
+
 afterAll(async () => {
   if (mongoose.connection.db) {
     await mongoose.connection.db.dropDatabase();
