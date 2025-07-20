@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchVouchers } from './api/vouchers';
 import { Voucher } from './types';
 import VoucherForm from './components/VoucherForm';
+import VoucherList from './components/VoucherList';
 
 function App() {
   const [vouchers, setVouchers] = useState<Voucher[]>([]);
@@ -19,6 +20,7 @@ function App() {
     <div style={{ padding: '1rem' }}>
       <h1>Meal Vouchers</h1>
       <VoucherForm onCreated={loadVouchers} />
+      <VoucherList vouchers={vouchers} />
     </div>
   );
 }
