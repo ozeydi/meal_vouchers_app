@@ -6,7 +6,9 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node", "jest"]
+
   },
-  "include": ["src", "__tests__", "jest.config.ts", "jest.setup.ts"]
+  "include": ["src", "__testserver/jest.configserver/jest.setup.ts"]
 }
